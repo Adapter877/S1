@@ -7,12 +7,12 @@ on:
 env:
   REGISTRY: ghcr.io
   ORIGINAL_IMAGE_NAME: ${{ github.repository }}
-  BUILD_RUNS_ON: self-hosted
+  BUILD_RUNS_ON: ubuntu-20.04
   DEPLOY_RUNS_ON: ubuntu-20.04
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     permissions:
       contents: read
       packages: write
